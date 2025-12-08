@@ -1,0 +1,16 @@
+// Last updated: 08/12/2025, 17:28:58
+class Solution {
+public:
+    bool digitCount(string num) {
+      
+
+        for(int i=0;i<num.size();i++)
+        {
+           if(count(num.begin(),num.end(),i+'0')!=num[i]-'0')
+               return false;
+        }  
+           return true;
+      
+        
+    }
+};
